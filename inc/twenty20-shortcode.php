@@ -72,7 +72,7 @@ if(!empty($img1) && !empty($img2)){
   $output .= '<img src="'. wp_get_attachment_url( $img1 ) .'"'.$img1_alt.' />';
   $output .= '<img src="'. wp_get_attachment_url( $img2 ) .'"'.$img2_alt.' />';
   $output .= '</div><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="'.plugins_url().'/assets/js/jquery.twenty20.js"></script>';
+  <script src="'.plugins_url().'/twenty20/assets/js/jquery.twenty20.js"></script>';
   $output .= '<script>jQuery(document).ready(function($){';
   if($direction == "vertical"){
     $output .= '$(".twentytwenty-container.'.$t20ID.'[data-orientation=\'vertical\']").twentytwenty({default_offset_pct: ' . $offset . $data_vertical . $isHover . '});';
