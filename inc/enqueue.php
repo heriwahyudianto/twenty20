@@ -6,10 +6,10 @@ function twenty20_zb_enqueue_script() {
   wp_enqueue_style( 'twenty20-style', ZB_T20_URL . '/assets/css/twenty20.css', array(), ZB_T20_VER );
 
   // Twenty20 Script
-  wp_enqueue_script( 'twenty20-style', ZB_T20_URL . '/assets/js/jquery.twenty20.js', array( 'jquery' ), ZB_T20_VER, true );
+  wp_enqueue_script( 'twenty20-style', ZB_T20_URL . '/assets/js/jquery.twenty20.js', array( 'jquery' ), ZB_T20_VER, false );
 
   // Twenty20 Event Move Script
-  wp_enqueue_script( 'twenty20-eventmove-style', ZB_T20_URL . '/assets/js/jquery.event.move.js', array( 'jquery' ), ZB_T20_VER, true );
+  wp_enqueue_script( 'twenty20-eventmove-style', ZB_T20_URL . '/assets/js/jquery.event.move.js', array( 'jquery' ), ZB_T20_VER, false );
 
 }
 add_action( 'wp_enqueue_scripts', 'twenty20_zb_enqueue_script');
